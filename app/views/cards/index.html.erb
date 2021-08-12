@@ -2,7 +2,7 @@
 <ul>
 <% @cards.each do |card| %>
   <li>
-    <%= card.title %>
+    <%= link_to card.title, card %>
   </li>
   <% end %>
 </ul>
