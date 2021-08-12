@@ -1,1 +1,8 @@
-<h1>Cards Page, YAY</h1>
+<h1>Celebration Cards</h1>
+<ul>
+<% @cards.each do |card| %>
+  <li>
+    <%= card.title %>
+  </li>
+  <% end %>
+</ul>
