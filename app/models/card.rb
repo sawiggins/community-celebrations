@@ -1,4 +1,4 @@
 class Card < ApplicationRecord
   validates :title, presence: true
-  validates :description, presence: true, length: { minimum: 10 }
+  validates :description, presence: true, length: {minimum: 10}
 end
