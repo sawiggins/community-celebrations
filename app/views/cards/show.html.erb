@@ -1,3 +1,4 @@
 <h1><%= @card.title %></h1>
 <p><%= @card.description %><p>
 <%= link_to "Edit this Card", edit_card_path %>
+<%= link_to "Delete this Card", card_path(@card), method: :delete, data: { confirm: "Are you sure?" } %>
