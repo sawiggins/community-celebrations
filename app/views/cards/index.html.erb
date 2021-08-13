@@ -1,10 +1,30 @@
-<h1>Celebration Cards</h1>
-<ul>
-<% @cards.each do |card| %>
-  <li>
-    <%= link_to card.title, card %>
-  </li>
-  <% end %>
-</ul>
+<%# <nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">🎉 Encouraging Cards</a>
+  </div>
+</nav> %>
+<div class="container">
 
-<%= link_to "New Celebration Card", new_card_path %>
+  <div class="row my-5">
+    <div class="col-md-10 offset-md-1 text-center">
+      <h1 class="mb-4">Happy Notes</h1>
+      <p>Hey budding Rails developer! You're awesome and doing a great!</p>
+      <p>The learning journey has it's fill of mountains and valleys. While you are here, why not leave a kind note for the next developer or share something cool you've recently learned while you're on your way to building a really cool app! Let's share some smiles to keep on going.</p>
+      <%= link_to "Add Note", new_card_path %>
+    </div>
+  </div>
+
+ <div class="row cards-row g-4">
+    <% @cards.each do |card| %>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+        <%= link_to card.title, card %>
+        <p><%= card.description%></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+</div>
