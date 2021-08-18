@@ -54,7 +54,7 @@ p {
   }
 }
 
-.section_hero {
+.section-hero {
   background-color: $near-black;
 
   h1 {
@@ -68,14 +68,14 @@ p {
   }
 }
 
-.section_cards {
+.section-cards {
   background:linear-gradient(0deg, rgba(11, 12, 16, 0), rgba(11, 12, 16, 1)), url(https://source.unsplash.com/G9i_plbfDgk);
   background-size:cover;
   flex: 1;
 }
 
 @include media-breakpoint-up(md) {
-  .section_hero {
+  .section-hero {
   
     h1 {
       font-size: 100px;
