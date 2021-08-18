@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2021_08_18_133328) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.string "commmenter"
+    t.string "commenter"
     t.text "body"
     t.integer "card_id", null: false
     t.datetime "created_at", precision: 6, null: false
