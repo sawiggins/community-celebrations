@@ -1,8 +1,9 @@
-.comment-input {
+.form-input {
   width: 100%;
 }
 
-.comment-label {
+.form-label {
+  color: $white;
   font-weight: 100;
 }
 
@@ -15,7 +16,7 @@
 }
 
 @include media-breakpoint-up(md) {
-  .comment-input {
+  .form-input {
     width: 50vw;
   }
 }

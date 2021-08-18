@@ -9,7 +9,7 @@ $navy: #1c223d;
 $primary-light: #bdfcf8;
 
 @import "./cards.scss";
-@import "./comments.scss";
+@import "./forms.scss";
 
 body {
   font-family: 'Kanit', sans-serif;
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $primary;
 }
 
-p, .label {
+p {
   color: white;
 }
 

@@ -16,12 +16,12 @@
   <h2>Add Your Own Comment</h2>
   <%= form_with model: [ @card, @card.comments.build ] do |form| %>
     <p>
-      <%= form.label :body, "Comment", :class => 'comment-label' %><br>
-      <%= form.text_area :body, :class => 'comment-input' %>
+      <%= form.label :body, "Comment", :class => 'form-label' %><br>
+      <%= form.text_area :body, :class => 'form-input' %>
     </p>
       <p>
-      <%= form.label :commenter, "Your Name", :class => 'comment-label' %><br>
-      <%= form.text_field :commenter, :class => 'comment-input' %>
+      <%= form.label :commenter, "Your Name", :class => 'form-label' %><br>
+      <%= form.text_field :commenter, :class => 'form-input' %>
     </p>
     <p>
       <%= form.submit "Add Comment", :class => 'btn' %>
