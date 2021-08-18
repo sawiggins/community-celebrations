@@ -1,25 +1,27 @@
-<div class="container">
-
-  <div class="row my-5">
+<section class="container-fluid section_hero">
+  <div class="row py-5">
     <div class="col-md-10 offset-md-1 text-center">
-      <h1 class="mb-4">Happy Wins 🎉</h1>
+      <h1 class="mb-4">Happy Wins</h1>
       <p>Hey budding Rails developer! You're awesome and doing a great!</p>
-      <p>The learning journey has its fill of mountains and valleys. While you are here, why not jot a recent win or share something fun you've learned with others.</p>
-      <%= link_to "Add Note", new_card_path %>
+      <p>The learning journey has its fill of mountains and valleys. While you are here, why not share a win, something fun you've learned, or a favorite resource.</p>
+      <%= link_to "Add Note", new_card_path, class: "btn" %>
     </div>
   </div>
+</section>
 
- <div class="row cards-row g-4">
-    <% @cards.each do |card| %>
-    <div class="col">
-      <div class="card">
-        <div class="card-body">
-        <%= link_to card.title, card %>
-        <p><%= card.description%></p>
+<section class="container-fluid py-5 section_cards grow-2">
+  <div class="container">
+    <div class="row cards-row g-4">
+        <% @cards.each do |card| %>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+            <p class="card-title"><%= link_to card.title, card %></p>
+            <p class="card-text"><%= card.description%></p>
+            </div>
+          </div>
         </div>
+        <% end %>
       </div>
-    </div>
-    <% end %>
   </div>
-
-</div>
+</section>

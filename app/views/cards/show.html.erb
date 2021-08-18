@@ -1,25 +1,27 @@
-<h1><%= @card.title %></h1>
-<p><%= @card.description %><p>
-<%= link_to "Edit this Card", edit_card_path %>
-<%= link_to "Delete this Card", card_path(@card), method: :delete, data: { confirm: "Are you sure?" } %>
+<section class="container py-5">
+  <h1><%= @card.title %></h1>
+  <p><%= @card.description %><p>
+  <%= link_to "Edit this Card", edit_card_path %>
+  <%= link_to "Delete this Card", card_path(@card), method: :delete, data: { confirm: "Are you sure?" } %>
 
-<h2>Comments</h2>
-<% @card.comments.each do |comment| %>
-  <p><%= comment.commenter %></p>
-  <p><%= comment.body %></p>
-<% end %>
+  <h2>Comments</h2>
+  <% @card.comments.each do |comment| %>
+    <p><%= comment.commenter %></p>
+    <p><%= comment.body %></p>
+  <% end %>
 
-<h2>Add a Comment</h2>
-<%= form_with model: [ @card, @card.comments.build ] do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+  <h2>Add a Comment</h2>
+  <%= form_with model: [ @card, @card.comments.build ] do |form| %>
+    <p>
+      <%= form.label :commenter %><br>
+      <%= form.text_field :commenter %>
+    </p>
+    <p>
+      <%= form.label :body %>
+      <%= form.text_area :body %>
+    </p>
+    <p>
+      <%= form.submit "Add Comment", :class => 'btn' %>
+    </p>
+  <% end %>
+</div>
