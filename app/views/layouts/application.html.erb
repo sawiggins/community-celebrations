@@ -11,6 +11,10 @@
   </head>
 
   <body class="d-flex flex-column">
+  <nav>
+    <%= link_to "Happy Wins", root_path, class: "nav-home" %>
+    <%= link_to "Add Note", new_card_path, class: "btn" %>
+  </nav>
     <%= yield %>
   </body>
 </html>
