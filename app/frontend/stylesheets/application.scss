@@ -9,6 +9,7 @@ $navy: #1c223d;
 $primary-light: #bdfcf8;
 
 @import "./cards.scss";
+@import "./comments.scss";
 
 body {
   font-family: 'Kanit', sans-serif;
@@ -45,7 +46,6 @@ p, .label {
     color: $primary;
     font-size: 48px;
     font-weight: 900;
-    text-transform: uppercase;
   }
 
   p {

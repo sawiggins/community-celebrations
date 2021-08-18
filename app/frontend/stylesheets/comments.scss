@@ -1,0 +1,21 @@
+.comment-input {
+  width: 100%;
+}
+
+.comment-label {
+  font-weight: 100;
+}
+
+.comment {
+  font-weight: 100;
+}
+
+.commenter {
+  margin-bottom: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .comment-input {
+    width: 50vw;
+  }
+}

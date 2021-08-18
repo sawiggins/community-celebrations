@@ -1,0 +1,7 @@
+    <section class="mt-5">
+      <h2>Comments</h2>
+      <% @card.comments.each do |comment| %>
+        <p class="commenter"><%= comment.commenter %>:</p>
+        <p class="comment"><%= comment.body %></p>
+      <% end %>
+    <section>

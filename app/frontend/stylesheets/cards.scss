@@ -13,13 +13,29 @@
 .card {
   background-color: rgb( 189, 252, 248, .1);
   border-radius: 0;
+}
+
+.card.card-index-page {
   height: 100%;
+  .card-body {
+    .card-title {
+      font-size: 18px;
+    }
+  }
+}
+
+.card.card-full-details {
+  margin-bottom: 2rem;
+
+  .card-title {
+    font-size: auto;
+  }
 }
 
 .card-body {
   .card-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    
     font-weight: 600;
 
     a {
@@ -31,4 +47,6 @@
     color: $white;
     font-weight: 100;
   }
+  
+
 }
